@@ -221,3 +221,93 @@
 .name:hover{
     color: #f26522;
 }
+/* product sale*/
+.product-sale .title-text{
+    padding-top: 20px;
+}
+.product-sale .title-text h2 a{
+    color: #fff;
+}
+.product-sale .title-text h2 a:hover{
+    color: #f26522;
+}
+
+.bg-overlay {
+    position: relative;
+    z-index: 1;
+}
+.bg-overlay:after {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 52, 52, 0.8);
+    z-index: -1;
+    content: "";
+    display: inline-block;
+}
+.wrap-time .time-button{
+    width: 100%;
+    height: 70px;
+    border: 0;
+    background-color: rgba(245, 239, 239, 0.372);
+    
+}
+
+.wrap-time{
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.product-sale .swiper .swiper-slide{
+    width: 570px;
+    height: 330px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgba(245, 239, 239, 0.372) ;
+}
+.sale-cart{
+    display: absolute;
+    border: 1px solid #fff;
+    padding-left:30px ;
+    padding-top: 15px;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 50px;
+}
+.sale-cart:hover{
+    background-color: #f26522;
+}
+.product-sale .name-product{
+    font-size: 20px;
+}
+.product-sale .price-product{
+    font-size: 20px;
+    color: #f26522;
+}
+.product-sale .swiper img{
+    width: 270px;
+    height: 270px;
+    margin-top:30px;
+    margin-left: 20px;
+}
+.box-left{
+    display: block;
+    padding-top: 100px;
+    padding-left: 10px;
+}
+.product-sale .swiper .swiper-slide:hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.product-sale{
+    margin-top: 0;
+    background-image: url(//bizweb.dktcdn.net/100/365/442/themes/737549/assets/bg-section1.jpg?1664720334923);
+
+}
+

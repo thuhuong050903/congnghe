@@ -534,7 +534,7 @@
     color: #fff;
 }
 
-/*menu-icon*/
+/*menu-icon trang giỏ hàng*/
 .menu-icon table{
     position: fixed;
     z-index: 9;
@@ -571,13 +571,6 @@
     height: 50px;
 }
 
-.thanh-menu{
-    display: none;
-}
-.thanh-menu img{
-    width:50px;
-    position: absolute;
-}
 /* Mobile: width <720px */
 @media only screen and (max-width: 46.1875em) {
     .container-full{
@@ -779,7 +772,38 @@
         width: 60px;
         font-size: 16px;
     }
-
+    .product-sale .swiper .swiper-slide{
+        width: 150px;
+        height: 400px;
+        display: block;
+    }
+    .product-sale .swiper img {
+        width: 150px;
+        height: 150px;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .box-left{
+        font-size: 14px;
+        display: block;
+        padding-top: 0px;
+        padding-left: 10px;
+    }
+    .box-left .product-info .name-product{
+        font-size: 14px;
+    }
+    .box-left .product-info .price-product{
+        font-size: 14px;
+    }
+    #footer {
+        height: 3000px;
+    }
+    #footer .revfooter{
+        display: block;
+        
+    }
+}
 /*tablet: width >=720px and width <1024px */
 
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {

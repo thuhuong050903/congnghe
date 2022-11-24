@@ -42,7 +42,7 @@
 
 .dropdown-menu {
     overflow-y: scroll;
-    height: 500px;
+    height: 400px;
 }
 
 .dropdown-menu::-webkit-scrollbar {
@@ -86,10 +86,6 @@
     transition: all 0.9s;
 }
 
-.search-box input:focus {
-    width: 400px;
-    padding: 0 6px;
-}
 
 .search-box:hover input {
     width: 400px;
@@ -104,7 +100,7 @@
     background: rgba(0, 0, 0, 0);
     background-color: #f26522;
 }
-
+/*giỏ hàng*/
 .header-right {
     display: flex;
     width: 250px;
@@ -130,6 +126,7 @@
     font-weight: bold;
 }
 
+/* CSS phần chính */
 .container-full{
     margin-top: 150px;
 }
@@ -162,6 +159,7 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
+    
 }
 .title-text a:hover{
     color: #f26522;
@@ -192,6 +190,7 @@
   
 .swiper-slide {
     display: block;
+    margin-top: 20px;
   }
   
 .swiper-slide img {
@@ -253,14 +252,17 @@
     background: url(//bizweb.dktcdn.net/100/365/442/themes/737549/assets/bg1.png?1656562257403);
     background-size: 100% auto;
 }
+
+/* video*/
 .video{
     margin-top: 0;
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
     background: url(//bizweb.dktcdn.net/100/365/442/themes/737549/assets/bg1.png?1656562257403);
     background-size: 100% auto;
 }
 
-/* video*/
 .video .container video {
     border: 2px solid #f26522;
 }
@@ -567,4 +569,219 @@
 .menu-icon .item{
     width:300px ;
     height: 50px;
+}
+
+.thanh-menu{
+    display: none;
+}
+.thanh-menu img{
+    width:50px;
+    position: absolute;
+}
+/* Mobile: width <720px */
+@media only screen and (max-width: 46.1875em) {
+    .container-full{
+        display: block;
+    }
+    #header{
+        display: block;
+        height: 200px;
+    }
+    .logo img{
+        width:200px;
+        right: 0;
+    }
+    .dropdown {
+        width:20px; 
+    }
+    .dropdown .button{
+        font-size: 13px;
+    }
+    .search-box{
+        width: 200px;
+    }
+    .search-box input{
+        margin-left: 50px;
+        font-size: 15px;
+    }
+    .search-button{
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        z-index:99;
+        display: block;
+    }
+    .header-right{
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        top:-80px;
+        left: 220px;
+        
+    }
+    .header-right a{
+        font-size: 16px;
+    }
+    .header-right i{
+        font-size: 16px;
+    }
+    .container-full{
+        margin-top: 200px;
+    }
+    .slider {
+        padding: 10px;
+    }
+    .banner {
+        padding: 10px;
+    }
+    .banner p{
+        display: none;
+    }
+    .title-text h2{
+        font-size:20px ;
+    }
+    .swiper .swiper-wrapper{
+        width: 300px;
+        
+    }
+    .swiper .swiper-slide{
+        background-color: #fff;
+        height: 300px;
+    }
+    .swiper-slide .product-item {
+        width: 300px;
+        height: 200px;
+    }
+
+    .video video{
+        width: 360px;
+        height: 100px;
+    }
+    .product-box{
+        display: block;
+    }
+    .product-box img{
+        width: 320px;
+        height: 260px;
+    }
+    .l-item .price-product{
+        font-size: 13px;
+    }
+    .l-item .name {
+        font-size: 13px;
+    }
+    .l-item{
+        margin-left: 20px;
+        width: 320px;
+        height: 400px;
+    }
+
+
+    .swiper-slide .eye{
+        display: block;
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+        left: 0px;
+        text-align: left;
+        transition: 0.5s all;
+        z-index: 9;
+        background: #f26522;
+        color: #fff;
+        bottom: 0px !important;
+        height: 60px;
+        width: 60px;
+        border: none;
+        top: 0px;
+        font-size: 16px;
+        padding-left: 15px;
+        padding-top: 5px;  
+    }
+    .swiper-slide .cart{
+        display: block;
+        bottom: 0;
+        right: 30px;
+        clip-path:polygon(100% 0, 0% 100%, 100% 100%);
+        padding: 26px 20px 0px 35px !important;
+        transition: all 0.5s ease 0s;
+        background: #f26522;
+        height: 60px;
+        width: 60px;
+        font-size: 16px;
+    
+    
+    }
+    .l-item .eye{
+        display: block;
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+        left: 35px;
+        text-align: left;
+        transition: 0.5s all;
+        z-index: 9;
+        background: #f26522;
+        color: #fff;
+        bottom: 0px !important;
+        height: 80px;
+        width: 80px;
+        border: none;
+        top: 10px;
+        font-size: 16px;
+        padding-left: 15px;
+        padding-top: 5px;  
+    }
+    .l-item .cart {
+        display: block;
+        bottom: 0px;
+        right: 35px;
+        clip-path:polygon(100% 0, 0% 100%, 100% 100%);
+        padding: 45px 10px 0px 40px !important;
+        transition: all 0.5s ease 0s;
+        background: #f26522;
+        height: 80px;
+        width: 80px;
+        font-size: 16px;
+    }
+    .group-product {
+        display: block;
+    }
+    .product-box .product-item{
+        margin-left: 9px;
+        width: 320px;
+        height: 300px;
+        padding: 30px;
+    }
+    
+    .product-box .product-item .eye{
+        display: block;
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+        left: 23px;
+        text-align: left;
+        transition: 0.5s all;
+        z-index: 9;
+        background: #f26522;
+        color: #fff;
+        bottom: 0px !important;
+        height: 60px;
+        width: 60px;
+        border: none;
+        top: 0px;
+        font-size: 16px;
+        padding-left: 15px;
+        padding-top: 5px;  
+    }
+    .product-box .product-item .cart{
+        display: block;
+        bottom: 0px;
+        right: -253px;
+        clip-path:polygon(100% 0, 0% 100%, 100% 100%);
+        padding: 30px 10px 0px 30px !important;
+        transition: all 0.5s ease 0s;
+        background: #f26522;
+        height: 60px;
+        width: 60px;
+        font-size: 16px;
+    }
+
+/*tablet: width >=720px and width <1024px */
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    
 }
